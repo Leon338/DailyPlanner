@@ -1,0 +1,13 @@
+name = "focusgroup"
+main = "src/index.ts"
+compatibility_date = "2022-05-19"
+
+[durable_objects]
+bindings = [
+    {name= 'ROOM_DO', class_name= 'RoomDurableObject'}
+]
+
+
+[[migrations]]
+tag = 'v1'
+new_classes = ['RoomDurableObject']
